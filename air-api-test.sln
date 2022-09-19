@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "air-api-test", "air-api-test\air-api-test.csproj", "{566E34FC-8053-46A9-90E7-CA29BCA33B07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{566E34FC-8053-46A9-90E7-CA29BCA33B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566E34FC-8053-46A9-90E7-CA29BCA33B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566E34FC-8053-46A9-90E7-CA29BCA33B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566E34FC-8053-46A9-90E7-CA29BCA33B07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3408F882-6A17-43AA-B44C-D16491D62A9F}
+	EndGlobalSection
+EndGlobal
