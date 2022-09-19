@@ -25,17 +25,25 @@ namespace air_api_test.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("getall")]
+        [Route("GetAllRequesters")]
         public IActionResult GetAll(int records)
         {
-            IEnumerable<Requesters> requestersList = (from r in _dbContext.Requesters
-                                                     select r).Take(records).ToList();
-            if (requestersList.Count() > 0)
-            {
-                return Ok(requestersList);
-            }
+            try
+            { 
+                IEnumerable<Requesters> requestersList = (from r in _dbContext.Requesters
+                                                         select r).Take(records).ToList();
+                if (requestersList.Count() > 0)
+                {
+                    return Ok(requestersList);
+                }
 
-            return NotFound();
+                return NotFound();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

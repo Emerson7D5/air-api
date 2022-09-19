@@ -23,17 +23,25 @@ namespace air_api_test.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("getall")]
+        [Route("GetAllLocation")]
         public IActionResult GetAll()
         {
-            IEnumerable<Locations> locationsList = (from r in _dbContext.Locations
-                                                      select r).ToList();
-            if (locationsList.Count() > 0)
-            {
-                return Ok(locationsList);
-            }
+            try
+            { 
+                IEnumerable<Locations> locationsList = (from r in _dbContext.Locations
+                                                        select r).ToList();
+                if (locationsList.Count() > 0)
+                {
+                    return Ok(locationsList);
+                }
 
-            return NotFound();
+                return NotFound();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
