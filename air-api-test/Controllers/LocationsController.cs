@@ -1,4 +1,5 @@
 ﻿using air_api_test.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ namespace air_api_test.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LocationsController : ControllerBase
     {
         private readonly airContext _dbContext;
@@ -17,11 +19,10 @@ namespace air_api_test.Controllers
         {
             this._dbContext = context;
         }
-
         /// <summary>
-        /// Return all data from locations table
+        /// Return the list of locations
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List<Locations></returns>
         [HttpGet]
         [Route("GetAllLocation")]
         public IActionResult GetAll()
