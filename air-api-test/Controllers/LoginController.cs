@@ -40,6 +40,14 @@ namespace air_api_test.Controllers
             return NotFound("User not found");
         }
 
+        private UserModel Authenticate(UserLogin userLogin)
+        {
+            return UserConstants.Users.FirstOrDefault(
+                                    o => o.UserName.ToLower() == userLogin.UserName.ToLower() 
+                                    && o.Password == userLogin.Password
+                                    );
+        }
+
         private object Generate(UserModel user)
         {
             var securtyKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
@@ -63,9 +71,5 @@ namespace air_api_test.Controllers
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        private UserModel Authenticate(UserLogin userLogin)
-        {
-            return UserConstants.Users.FirstOrDefault(o => o.UserName.ToLower() == userLogin.UserName.ToLower() && o.Password == userLogin.Password);           
-        }
     }
 }

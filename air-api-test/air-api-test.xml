@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>air-api-test</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:air_api_test.Controllers.LocationsController.GetAll" -->
+        <member name="M:air_api_test.Controllers.RequestersController.GetAll(System.Int32)">
+            <summary>
+            Return all data from requesters table
+            </summary>
+            <param name="numOfRecords">Nums of records to return</param>
+            <returns></returns>
+        </member>
+        <member name="M:air_api_test.Controllers.TicketMasterController.GetAll">
+            <summary>
+            Return all data from Ticket Master table
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

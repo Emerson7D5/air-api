@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj": {}
+    "D:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj": {}
   },
   "projects": {
-    "C:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj": {
+    "D:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj",
+        "projectUniqueName": "D:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj",
         "projectName": "air-api-test",
-        "projectPath": "C:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj",
+        "projectPath": "D:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\air-api-test.csproj",
         "packagesPath": "C:\\Users\\emers\\.nuget\\packages\\",
-        "outputPath": "C:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\obj\\",
+        "outputPath": "D:\\EA\\TechAffinity\\apiTest\\air-api-test\\air-api-test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emers\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }
